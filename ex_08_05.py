@@ -12,7 +12,7 @@ count = 0
 try:
     ibox = open(mbox)
     for line in ibox:
-        if line.startswith('From'):
+        if line.startswith('From '):
             words = line.split()
             print(words[1])
             count = count + 1
